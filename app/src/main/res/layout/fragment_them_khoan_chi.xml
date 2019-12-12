@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ThemKhoanChiFragment">
+
+    <EditText
+        android:id="@+id/edMaKC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã khoản chi"/>
+    <EditText
+        android:id="@+id/edTenKC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên khoản chi"/>
+    <Spinner
+        android:id="@+id/spnLoaiChi"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"/>
+    <EditText
+        android:id="@+id/edTienKC"
+        android:hint="Tiền khoản chi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:id="@+id/tvNgay"
+            android:hint="18/09/2000"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnNgay"
+            android:hint="Chọn ngày"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:text="Thêm"
+        android:id="@+id/btnThemKhoanChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
